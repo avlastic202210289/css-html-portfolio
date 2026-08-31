@@ -1,0 +1,574 @@
+/* GENERAL STYLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fcf9ee;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+
+/* TRANSITIONS */
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+
+/* DESKTOP NAVIGATION */
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+  background-color: #fcf9ee;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 0.7rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger-icon span:last-child {
+    transform: none;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+    align-items: center;
+    /* Ovo odvaja drugu sliku na profilu 
+    od onog dela sa iskustvom to kod njega nema ima samo display*/
+}
+
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.7rem 1rem;
+    width: 7rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    border: none;
+}
+
+.btn-color-1 {
+    background-color: rgb(53, 53, 53);
+    color: #e3e1d9;
+}
+
+.btn-color-1:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn-color-2 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 0.1rem solid rgb(163, 163, 163);
+}
+
+.btn-color-2:hover {
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+
+/* ABOUT SECTION */
+
+#omeni {
+    position: relative;
+}
+
+.text-container p {
+    text-align: justify;
+}
+
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details-container {
+    padding: 1.5rem 1.2rem;
+    flex: 1;
+    background-color: #fcf9ee;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    text-align: center;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+
+/* ARROWS */
+
+/*
+Obe sekcije ponovo imaju istu marginu od 10rem,
+zato obe strelice mogu da koriste isti right: 0.
+*/
+
+.arrow {
+    position: absolute;
+    right: 0;
+    bottom: 2.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+/* EXPERIENCE SECTION */
+
+#iskustvo {
+    position: relative;
+}
+
+/* Ovo važi samo za Experience, ne za Projects */
+
+#iskustvo .experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#iskustvo .about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#iskustvo .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+#iskustvo .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+/* EXPERIENCE ARTICLES*/
+
+#iskustvo .article-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 2.5rem;
+    width: 100%;
+}
+
+#iskustvo article {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+#iskustvo article .icon {
+    cursor: default;
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+}
+
+#iskustvo article div {
+    text-align: left;
+    min-width: 0;
+}
+
+#iskustvo article h3 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#iskustvo article p {
+    font-size: 0.8rem;
+    line-height: 1.25;
+    margin-top: 0.2rem;
+}
+/* PROJECT SECTION */
+
+#radovi {
+    height: auto;
+    min-height: 96vh;
+    padding-bottom: 5rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    display: block;
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+
+    /* ista visina prostora za svaki naslov */
+    min-height: 4.5rem;
+
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card p {
+    font-size: 1rem;
+
+    /* ista visina prostora za opis */
+    min-height: 2rem;
+
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+
+    padding: 0.45rem 1.2rem;
+
+    background-color: transparent;
+    color: black;
+
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    /* dugme ide uvek na isto mesto */
+    margin-top: auto;
+    align-self: center;
+}
+
+.project-btn:hover {
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+/* POJEDINACNI PROJEKTI */
+
+.project-page {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.project-description {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.5rem;
+}
+
+/* CONTACT */
+
+#kontakt {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+
+    border-radius: 3rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+
+   background: #fcf9ee;
+
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: 1.1rem;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* Footer */
+footer{
+    height:26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}

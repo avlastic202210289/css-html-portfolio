@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moj portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anđela Vlastić</div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#omeni">O meni</a></li>
+                <li><a href="#iskustvo">Iskustvo</a></li>
+                <li><a href="#radovi">Radovi</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+
+        <div class="logo">Anđela Vlastić</div>
+
+        <div class="hamburger-menu">
+
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#omeni" onclick="toggleMenu()">O meni</a>
+                </li>
+                <li><a href="#iskustvo" onclick="toggleMenu()">Iskustvo</a>
+                </li>
+                <li><a href="#radovi" onclick="toggleMenu()">Radovi</a>
+                </li>
+                <li><a href="#kontakt" onclick="toggleMenu()">Kontakt</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+
+            <img src="./assets/profilna.png"
+                alt="Anđela Vlastić profilna slika"/>
+
+        </div>
+
+        <div class="section__text">
+
+            <p class="section__text__p1">
+                Ćao! Ja sam </p>
+
+            <h1 class="title">
+                Anđela Vlastić
+            </h1>
+
+            <p class="section__text__p2">
+                Grafički dizajner
+            </p>
+
+            <div class="btn-container">
+
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/Andjela Vlastić CV.pdf')"
+                >
+                    Preuzmi CV
+                </button>
+
+                <button
+                    class="btn btn-color-1"
+                    onclick="location.href='./#kontakt'"
+                >
+                    Kontakt
+                </button>
+
+            </div>
+            <div id="socials-container">
+
+                <img
+                    src="./assets/instagram.png"
+                    alt="Moj Instagram profil"
+                    class="icon"
+                    onclick="location.href='https://www.instagram.com/vlastichdesign/'"
+                >
+
+                <img
+                    src="./assets/tiktok.png"
+                    alt="Moj TikTok profil"
+                    class="icon"
+                    onclick="location.href='https://www.tiktok.com/@vlastichdesign'" 
+                > 
+ 
+            </div> 
+ 
+        </div> 
+ 
+    </section> 
+ 
+    <section id="omeni"> 
+ 
+    <p class="section__text__p1">Saznaj više detalja</p> 
+    <h1 class="title">o meni</h1> 
+ 
+    <div class="section-container"> 
+ 
+        <div class="section__pic-container"> 
+            <img src="./assets/andjelaa.jpg" 
+                 alt="Profilna slika" 
+                 class="about-pic"> 
+        </div> 
+ 
+        <div class="about-details-container"> 
+ 
+            <div class="about-containers"> 
+ 
+                <div class="details-container"> 
+                    <img src="./assets/experience.png" 
+                         alt="Iskustvo ikona" 
+                         class="icon"> 
+                    <h3>Iskustvo</h3> 
+                    <p>2+ godine<br>u grafičkom dizajnu</p> 
+                </div> 
+ 
+                <div class="details-container"> 
+                    <img src="./assets/education.png" 
+                         alt="Obrazovanje ikona" 
+                         class="icon"> 
+                    <h3>Obrazovanje</h3> 
+                    <p> 
+                    Grafički dizajn na Akademiji strukovnih studija Politehnika 
+                    </p> 
+                </div> 
+ 
+            </div> 
+ 
+            <div class="text-container"> 
+                <p> 
+                   Bavim se grafičkim dizajnom sa fokusom na vizuelne identitete, brending i dizajn za digitalne i štampane medije. Volim da eksperimentišem sa bojama, tipografijom i različitim vizuelnim stilovima, sa ciljem da stvorim rešenja koja su funkcionalna, prepoznatljiva i imaju karakter. 
+                </p> 
+            </div> 
+ 
+        </div> 
+ 
+    </div> 
+ 
+    <img src="./assets/arrow.png" 
+         alt="Strelica na dole" 
+         class="icon arrow" 
+         onclick="location.href='./#iskustvo'"/> 
+ 
+</section> 
+<section id="iskustvo"> 
+    <p class="section__text__p1">Više o</p> 
+    <h1 class="title"> mom iskustvu</h1> 
+    <div class="experience-details-container"> 
+        <div class="about-containers"> 
+            <div class="details-container"> 
+                <h2 class="experience-sub-title">Tehničke veštine</h2> 
+                <div class="article-container"> <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Adobe Illustrator</h3> 
+                <p>Napredni nivo</p></div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Adobe Photoshop</h3> 
+                <p>Napredni nivo</p></div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Adobe InDesign</h3> 
+                <p>Srednji nivo</p></div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>CapCut</h3> 
+                <p>Napredni nivo</p></div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Adobe Premiere Pro</h3> 
+                <p>Srednji nivo</p></div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>CorelDRAW</h3> 
+                <p>Osnovni nivo</p></div> </article> 
+                </div> 
+            </div>   
+             <div class="details-container"> 
+                <h2 class="experience-sub-title">Veštine</h2> 
+                <div class="article-container"> <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Vizuelni identitet i brending</h3> 
+                </div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Logo dizajn</h3> 
+                </div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Priprema za štampu</h3> 
+                </div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Dizajn ambalaže i promotivnih materijala</h3> 
+                </div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Dizajn za društvene mreže</h3> 
+                </div> </article> 
+                <article>   <img src="./assets/checkmark.png" alt="Iskustvo" icon class="icon"> 
+                <div>   <h3>Editorial dizajn</h3> 
+                </div> </article> 
+                </div> 
+            </div>   
+        </div> 
+    </div> 
+    <img src="./assets/arrow.png" 
+         alt="Strelica na dole" 
+         class="icon arrow" 
+         onclick="location.href='./#radovi'"/> 
+ 
+</section>   
+<section id="radovi">
+
+    <p class="section__text__p1">Baci pogled na</p>
+    <h1 class="title">moje radove</h1>
+
+    <div class="projects-container">
+
+        <!-- PROJEKAT 1 -->
+        <div class="project-card">
+            <img src="./assets/zrnce.png" alt="Projekat 1" class="project-img">
+            <h2>Vizuelni identitet</h2>
+            <p>Brending / Logo Design</p>
+          <button
+    class="project-btn"
+    onclick="location.href='projekat1.html'"
+>Pogledaj projekat
+</button>
+</div>
+
+        <!-- PROJEKAT 2 -->
+        <div class="project-card">
+            <img src="./assets/kafaa.png" alt="Projekat 2" class="project-img">
+            <h2>Dizajn ambalaže</h2>
+            <p>Packaging / Brend identity</p>
+           <button
+    class="project-btn"
+    onclick="location.href='projekat2.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 3 -->
+        <div class="project-card">
+            <img src="./assets/objave.png" alt="Projekat 3" class="project-img">
+            <h2>Društvene mreže</h2>
+            <p>Social Media Design</p>
+            <button
+    class="project-btn"
+    onclick="location.href='projekat3.html'"
+>
+    Pogledaj projekat
+</button>
+            </div>
+
+        <!-- PROJEKAT 4 -->
+        <div class="project-card">
+            <img src="./assets/flajer.png" alt="Projekat 4" class="project-img">
+            <h2>Dizajn letaka</h2>
+            <p>Flyer / Print Design</p>
+            <button
+    class="project-btn"
+    onclick="location.href='projekat4.html'"
+>
+    Pogledaj projekat
+</button>
+           </div>
+
+        <!-- PROJEKAT 5 -->
+        <div class="project-card">
+            <img src="./assets/sipzif.png" alt="Projekat 5" class="project-img">
+            <h2>Serija ambalaža</h2>
+            <p>Packaging System</p>
+            <button
+    class="project-btn"
+    onclick="location.href='projekat5.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 6 -->
+        <div class="project-card">
+            <img src="./assets/vukotic.png" alt="Projekat 6" class="project-img">
+            <h2>Promotivni materijali</h2>
+            <p>Print Design</p>
+            <button
+    class="project-btn"
+    onclick="location.href='projekat6.html'"
+>
+    Pogledaj projekat
+</button>
+           </div>
+
+        <!-- PROJEKAT 7 -->
+        <div class="project-card">
+            <img src="./assets/vino.png" alt="Projekat 7" class="project-img">
+            <h2>Dizajn etikete</h2>
+            <p>Label / Packaging Design</p>
+              <button
+    class="project-btn"
+    onclick="location.href='projekat7.html'"
+>
+    Pogledaj projekat
+</button>
+         </div>
+
+        <!-- PROJEKAT 8 -->
+        <div class="project-card">
+            <img src="./assets/logo.png" alt="Projekat 8" class="project-img">
+            <h2>Vizuelni identitet</h2>
+            <p>Logo / Business Card</p>
+           <button
+    class="project-btn"
+    onclick="location.href='projekat8.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 9 -->
+        <div class="project-card">
+            <img src="./assets/kutije.png" alt="Projekat 9" class="project-img">
+            <h2>Serija ambalaža</h2>
+            <p>Packaging System</p>
+           <button
+    class="project-btn"
+    onclick="location.href='projekat9.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 10 -->
+        <div class="project-card">
+            <img src="./assets/sladoledi.png" alt="Projekat 10" class="project-img">
+            <h2>Serija ambalaža</h2>
+            <p>Packaging System / Brend Identity</p>
+             <button
+    class="project-btn"
+    onclick="location.href='projekat10.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 11 -->
+        <div class="project-card">
+            <img src="./assets/drunkendragon.png" alt="Projekat 11" class="project-img">
+            <h2>Dizajn limenke</h2>
+            <p>Packaging Design</p>
+             <button
+    class="project-btn"
+    onclick="location.href='projekat11.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+        <!-- PROJEKAT 12 -->
+        <div class="project-card">
+            <img src="./assets/jafa.png" alt="Projekat 12" class="project-img">
+            <h2>Redizajn ambalaže</h2>
+            <p>Packaging Redesign</p>
+             <button
+    class="project-btn"
+    onclick="location.href='projekat12.html'"
+>
+    Pogledaj projekat
+</button>
+        </div>
+
+    </div>
+</section>
+<section id="kontakt">
+
+    <p class="section__text__p1">
+        Javi se da radimo zajedno
+    </p>
+
+    <h1 class="title">
+        Kontaktiraj me
+    </h1>
+
+    <div class="contact-info-upper-container">
+
+        <div class="contact-info-container">
+            <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+            >
+
+            <p>
+                <a href="mailto:vl4st1ch@gmail.com">
+                    vl4st1ch@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-info-container">
+            <img
+                src="./assets/instagram.png"
+                alt="Instagram icon"
+                class="icon contact-icon"
+            >
+
+            <p>
+                <a href="https://www.instagram.com/vlastichdesign/">
+                    Instagram
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<footer>
+    <nav>
+    <div class="nav-links-container">
+         <ul class="nav-links">
+                <li><a href="#omeni">O meni</a></li>
+                <li><a href="#iskustvo">Iskustvo</a></li>
+                <li><a href="#radovi">Radovi</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+    </div>
+    </nav>
+    <p>Copyright &#169; 2026 Anđela Vlastić</p>
+</footer>
+    <script src="script.js"></script> 
+ 
+</body> 
+ 
+</html>
