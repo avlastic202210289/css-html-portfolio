@@ -167,8 +167,6 @@ section {
     gap: 4rem;
     height: 80%;
     align-items: center;
-    /* Ovo odvaja drugu sliku na profilu 
-    od onog dela sa iskustvom to kod njega nema ima samo display*/
 }
 
 
@@ -311,13 +309,18 @@ section {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
 }
 
+.about-pic {
+    border-radius: 2rem;
+    cursor: default;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+#omeni .details-container .icon {
+    cursor: default;
+}
+
 
 /* ARROWS */
-
-/*
-Obe sekcije ponovo imaju istu marginu od 10rem,
-zato obe strelice mogu da koriste isti right: 0.
-*/
 
 .arrow {
     position: absolute;
