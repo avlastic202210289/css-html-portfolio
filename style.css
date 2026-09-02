@@ -510,7 +510,12 @@ zato obe strelice mogu da koriste isti right: 0.
     gap: 1.5rem;
 }
 
-.project-gallery img {
+.project-gallery a {
+    display: block;
+    width: 100%;
+}
+
+.project-gallery a img {
     width: 100%;
     height: auto;
     display: block;

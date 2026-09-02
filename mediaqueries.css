@@ -45,6 +45,34 @@
     }
 }
 
+/* SREDNJI EKRANI */
+
+@media screen and (max-width: 900px) {
+
+    #iskustvo .about-containers {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #iskustvo .details-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #iskustvo .article-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        row-gap: 2rem;
+    }
+
+    #iskustvo article h3 {
+        font-size: 0.85rem;
+    }
+
+    #iskustvo article p {
+        font-size: 0.75rem;
+    }
+}
 
 @media screen and (max-width: 600px) {
 
