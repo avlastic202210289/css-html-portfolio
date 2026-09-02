@@ -303,6 +303,12 @@ section {
 
 .about-pic {
     border-radius: 2rem;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.about-pic:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
 }
 
 
@@ -413,15 +419,22 @@ zato obe strelice mogu da koriste isti right: 0.
     margin-top: 3rem;
 }
 
-.project-card {
-    border: 0.1rem solid rgb(163, 163, 163);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    text-align: center;
-    box-sizing: border-box;
-
-    display: flex;
+.project-card { 
+    border: 0.1rem solid rgb(163, 163, 163); 
+    border-radius: 2rem; 
+    padding: 1.5rem; 
+    text-align: center; 
+    box-sizing: border-box; 
+ 
+    display: flex; 
     flex-direction: column;
+
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .project-img {
@@ -520,6 +533,13 @@ zato obe strelice mogu da koriste isti right: 0.
     height: auto;
     display: block;
     border-radius: 1.5rem;
+
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.project-gallery a:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* CONTACT */
